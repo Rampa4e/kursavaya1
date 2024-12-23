@@ -1,0 +1,45 @@
+\hypertarget{rw_8h_source}{}\doxysection{rw.\+h}
+\label{rw_8h_source}\index{/home/student/Документы/source/doxygen/client/rw.h@{/home/student/Документы/source/doxygen/client/rw.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <array>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <cstdint>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}error.h"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{classReadWrite}{ReadWrite}}}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{27     \mbox{\hyperlink{classReadWrite_ac6745feac8ae46621e6dd9d52c39e8ea}{ReadWrite}}(\textcolor{keywordtype}{string} \&inVec, \textcolor{keywordtype}{string} \&outVec, \textcolor{keywordtype}{string} \&cfg);}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{string} \mbox{\hyperlink{classReadWrite_a7ecc89ef9e39fd9ef9beb9f67b198a18}{getIn}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{string} \mbox{\hyperlink{classReadWrite_a65c771bca8b0d6f068747b73815e10db}{getOut}}();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{string} \mbox{\hyperlink{classReadWrite_add323197b33545068652a2f10a04e462}{getCfg}}();}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{classReadWrite_aa4f6f3a758cccb48b190b873ee022dc0}{writeVec}}(\textcolor{keyword}{const} vector<int32\_t> \&data);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{59     vector<vector<int32\_t>> \mbox{\hyperlink{classReadWrite_a7059677cac97763b605de0bd98e42c6d}{readVec}}();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{66     array<string, 2> \mbox{\hyperlink{classReadWrite_acb36facaa291e07df00d69095c4a7fff}{readCfg}}();}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{keyword}{private}:}
+\DoxyCodeLine{69     \textcolor{keywordtype}{string} in;   }
+\DoxyCodeLine{70     \textcolor{keywordtype}{string} out;  }
+\DoxyCodeLine{71     \textcolor{keywordtype}{string} cfg;  }
+\DoxyCodeLine{72 \};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{78 \textcolor{keywordtype}{void} printVector(\textcolor{keyword}{const} vector<int32\_t> \&vec);}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{84 \textcolor{keywordtype}{void} printVectors(\textcolor{keyword}{const} vector<vector<int32\_t>> \&vec);}
+
+\end{DoxyCode}

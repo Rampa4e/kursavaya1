@@ -1,0 +1,157 @@
+\hypertarget{classReadWrite}{}\doxysection{Класс Read\+Write}
+\label{classReadWrite}\index{ReadWrite@{ReadWrite}}
+
+
+Класс для чтения и записи данных из файлов.  
+
+
+
+
+{\ttfamily \#include $<$rw.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classReadWrite_ac6745feac8ae46621e6dd9d52c39e8ea}{Read\+Write}} (string \&in\+Vec, string \&out\+Vec, string \&cfg)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classReadWrite}{Read\+Write}}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classReadWrite_a7ecc89ef9e39fd9ef9beb9f67b198a18}{get\+In}} ()
+\begin{DoxyCompactList}\small\item\em Получить имя входного файла. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classReadWrite_a65c771bca8b0d6f068747b73815e10db}{get\+Out}} ()
+\begin{DoxyCompactList}\small\item\em Получить имя выходного файла. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classReadWrite_add323197b33545068652a2f10a04e462}{get\+Cfg}} ()
+\begin{DoxyCompactList}\small\item\em Получить имя файла конфигурации. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classReadWrite_aa4f6f3a758cccb48b190b873ee022dc0}{write\+Vec}} (const vector$<$ int32\+\_\+t $>$ \&data)
+\begin{DoxyCompactList}\small\item\em Записать вектор данных в выходной файл. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ int32\+\_\+t $>$ $>$ \mbox{\hyperlink{classReadWrite_a7059677cac97763b605de0bd98e42c6d}{read\+Vec}} ()
+\begin{DoxyCompactList}\small\item\em Прочитать векторы данных из входного файла. \end{DoxyCompactList}\item 
+array$<$ string, 2 $>$ \mbox{\hyperlink{classReadWrite_acb36facaa291e07df00d69095c4a7fff}{read\+Cfg}} ()
+\begin{DoxyCompactList}\small\item\em Прочитать конфигурационные данные из файла конфигурации. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для чтения и записи данных из файлов. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classReadWrite_ac6745feac8ae46621e6dd9d52c39e8ea}\label{classReadWrite_ac6745feac8ae46621e6dd9d52c39e8ea}} 
+\index{ReadWrite@{ReadWrite}!ReadWrite@{ReadWrite}}
+\index{ReadWrite@{ReadWrite}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{ReadWrite()}{ReadWrite()}}
+{\footnotesize\ttfamily Read\+Write\+::\+Read\+Write (\begin{DoxyParamCaption}\item[{string \&}]{in\+Vec,  }\item[{string \&}]{out\+Vec,  }\item[{string \&}]{cfg }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classReadWrite}{Read\+Write}}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em in\+Vec} & Имя входного файла. \\
+\hline
+{\em out\+Vec} & Имя выходного файла. \\
+\hline
+{\em cfg} & Имя файла конфигурации. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classReadWrite_add323197b33545068652a2f10a04e462}\label{classReadWrite_add323197b33545068652a2f10a04e462}} 
+\index{ReadWrite@{ReadWrite}!getCfg@{getCfg}}
+\index{getCfg@{getCfg}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{getCfg()}{getCfg()}}
+{\footnotesize\ttfamily string Read\+Write\+::get\+Cfg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить имя файла конфигурации. 
+
+\begin{DoxyReturn}{Возвращает}
+Имя файла конфигурации. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReadWrite_a7ecc89ef9e39fd9ef9beb9f67b198a18}\label{classReadWrite_a7ecc89ef9e39fd9ef9beb9f67b198a18}} 
+\index{ReadWrite@{ReadWrite}!getIn@{getIn}}
+\index{getIn@{getIn}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{getIn()}{getIn()}}
+{\footnotesize\ttfamily string Read\+Write\+::get\+In (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить имя входного файла. 
+
+\begin{DoxyReturn}{Возвращает}
+Имя входного файла. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReadWrite_a65c771bca8b0d6f068747b73815e10db}\label{classReadWrite_a65c771bca8b0d6f068747b73815e10db}} 
+\index{ReadWrite@{ReadWrite}!getOut@{getOut}}
+\index{getOut@{getOut}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{getOut()}{getOut()}}
+{\footnotesize\ttfamily string Read\+Write\+::get\+Out (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получить имя выходного файла. 
+
+\begin{DoxyReturn}{Возвращает}
+Имя выходного файла. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classReadWrite_acb36facaa291e07df00d69095c4a7fff}\label{classReadWrite_acb36facaa291e07df00d69095c4a7fff}} 
+\index{ReadWrite@{ReadWrite}!readCfg@{readCfg}}
+\index{readCfg@{readCfg}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{readCfg()}{readCfg()}}
+{\footnotesize\ttfamily array$<$ string, 2 $>$ Read\+Write\+::read\+Cfg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Прочитать конфигурационные данные из файла конфигурации. 
+
+\begin{DoxyReturn}{Возвращает}
+Массив строк с конфигурационными данными. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classVClientError}{VClient\+Error}}} & Если файл не может быть открыт или чтение конфигурации завершилось ошибкой. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classReadWrite_a7059677cac97763b605de0bd98e42c6d}\label{classReadWrite_a7059677cac97763b605de0bd98e42c6d}} 
+\index{ReadWrite@{ReadWrite}!readVec@{readVec}}
+\index{readVec@{readVec}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{readVec()}{readVec()}}
+{\footnotesize\ttfamily vector$<$ vector$<$ int32\+\_\+t $>$ $>$ Read\+Write\+::read\+Vec (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Прочитать векторы данных из входного файла. 
+
+\begin{DoxyReturn}{Возвращает}
+Вектор векторов данных. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classVClientError}{VClient\+Error}}} & Если файл не может быть открыт или чтение из файла завершилось ошибкой. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classReadWrite_aa4f6f3a758cccb48b190b873ee022dc0}\label{classReadWrite_aa4f6f3a758cccb48b190b873ee022dc0}} 
+\index{ReadWrite@{ReadWrite}!writeVec@{writeVec}}
+\index{writeVec@{writeVec}!ReadWrite@{ReadWrite}}
+\doxysubsubsection{\texorpdfstring{writeVec()}{writeVec()}}
+{\footnotesize\ttfamily void Read\+Write\+::write\+Vec (\begin{DoxyParamCaption}\item[{const vector$<$ int32\+\_\+t $>$ \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Записать вектор данных в выходной файл. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em data} & Вектор данных для записи. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classVClientError}{VClient\+Error}}} & Если файл не может быть открыт или запись в файл завершилась ошибкой. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+/home/student/Документы/source/doxygen/client/rw.\+h\item 
+/home/student/Документы/source/doxygen/client/rw.\+cpp\end{DoxyCompactItemize}
